@@ -6,12 +6,28 @@ html(lang='en')
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(name='description', content='')
-        meta(name='author', content='')
+        meta(name='author', content='Kiah Bouchet')
 
-        title Creative - Start Bootstrap Theme
+        title Declutter With Kiah
+        
 
-        // Favicon
-        link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
+        // Favicons Generated with favicon.il.ly
+        link(rel='icon', sizes='16x16 32x32 48x48 64x64', href='assets/img/favicon/favicon.ico')
+        //if IE
+        link(rel='shortcut icon', href='assets/img/favicon/favicon.ico')
+        // Optional: Android & iPhone
+        link(rel='apple-touch-icon-precomposed', href='assets/img/favicon/favicon-152.png')
+        // Optional: IE10 Tile.
+        meta(name='msapplication-TileColor', content='#FFFFFF')
+        meta(name='msapplication-TileImage', content='assets/img/favicon/favicon-144.png')
+        // Optional: ipads, androids, iphones, ...
+        link(rel='apple-touch-icon-precomposed', sizes='152x152', href='assets/img/favicon/favicon-152.png')
+        link(rel='apple-touch-icon-precomposed', sizes='144x144', href='assets/img/favicon/favicon-144.png')
+        link(rel='apple-touch-icon-precomposed', sizes='120x120', href='assets/img/favicon/favicon-120.png')
+        link(rel='apple-touch-icon-precomposed', sizes='114x114', href='assets/img/favicon/favicon-114.png')
+        link(rel='apple-touch-icon-precomposed', sizes='72x72', href='assets/img/favicon/favicon-72.png')
+        link(rel='apple-touch-icon-precomposed', href='assets/img/favicon/favicon-57.png')
+        link(rel='icon', type='image/x-icon', href='assets/img/favicon/favicon.ico')
 
         // Font Awesome icons (free version)
         script(src='https://use.fontawesome.com/releases/v5.15.1/js/all.js', crossorigin='anonymous')
@@ -31,7 +47,7 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
             .container
-                a.navbar-brand.js-scroll-trigger(href='#page-top') Start Bootstrap
+                a.navbar-brand.js-scroll-trigger(href='#page-top') Declutter With Kiah
                 button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     span.navbar-toggler-icon
                 #navbarResponsive.collapse.navbar-collapse
@@ -41,7 +57,7 @@ html(lang='en')
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#services') Services
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#portfolio') Portfolio
+                            a.nav-link.js-scroll-trigger(href='#before-after') Before & After
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#contact') Contact
 
@@ -50,11 +66,11 @@ html(lang='en')
             .container.h-100
                 .row.h-100.align-items-center.justify-content-center.text-center
                     .col-lg-10.align-self-end
-                        h1.text-uppercase.text-white.font-weight-bold Your Favorite Source of Free Bootstrap Themes
+                        h1.text-uppercase.text-white.font-weight-bold Professional Declutter Services in Perth Area
                         hr.divider.my-4
                     .col-lg-8.align-self-baseline
                         p.text-white-75.font-weight-light.mb-5
-                            | Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!
+                            | Do you open your cupboards and scream, HELP!! And then quickly close them again? Well, you shouldn't have to, you should open up your pantry or wardrobe and breath out a large sigh of relief because you can finally find everything
                         a.btn.btn-primary.btn-xl.js-scroll-trigger(href='#about') Find Out More
 
         // About
@@ -62,10 +78,14 @@ html(lang='en')
             .container
                 .row.justify-content-center
                     .col-lg-8.text-center
-                        h2.text-white.mt-0 We've got what you need!
+                        h2.text-white.mt-0 A clean house makes for a clean mind
                         hr.divider.light.my-4
                         p.text-white-50.mb-4
-                            | Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!
+                            | This is a job for a perfectionist, one would even call these people OCD! And that is me...im here to help re organise, stylize whatever it may be that you need help with. Office work, that's lying around, clothes that need sorting, labeling food containers so you don't keep buying another bottle of you know what?!
+                            br
+                            br
+                            | I'm a local freo declutter queen that has lived with 3 boys and my husband for 13 years now and so I have lots of experience with managing a clean, organized and clutter free home. 
+
                         a.btn.btn-light.btn-xl.js-scroll-trigger(href='#services') Get Started!
 
         // Services
@@ -77,7 +97,7 @@ html(lang='en')
                     .col-lg-3.col-md-6.text-center
                         .mt-5
                             i.fas.fa-4x.fa-gem.text-primary.mb-4
-                            h3.h4.mb-2 Sturdy Themes
+                            h3.h4.mb-2 Flexiable
                             p.text-muted.mb-0 Our themes are updated regularly to keep them bug free!
                     .col-lg-3.col-md-6.text-center
                         .mt-5
@@ -95,64 +115,88 @@ html(lang='en')
                             h3.h4.mb-2 Made with Love
                             p.text-muted.mb-0 Is it really open source if it's not made with love?
 
-        // Portfolio
-        div#portfolio
+        // before-after
+        div#before-after
             .container-fluid.p-0
                 .row.no-gutters
                     .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/fullsize/1.jpg')
-                            img.img-fluid(src='assets/img/portfolio/thumbnails/1.jpg', alt='')
+                        a.portfolio-box(href='assets/img/before-after/1.png')
+                            img.img-fluid(src='assets/img/before-after/1.png', alt='')
                             .portfolio-box-caption
                                 .project-category.text-white-50
-                                    | Category
+                                    | Before After
+                                .project-name
+                                    | Storage
+                    .col-lg-4.col-sm-6
+                        a.portfolio-box(href='assets/img/before-after/2.png')
+                            img.img-fluid(src='assets/img/before-after/2.png', alt='')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | Before After
+                                .project-name
+                                    | Kids Storage
+                    .col-lg-4.col-sm-6
+                        a.portfolio-box(href='assets/img/before-after/3.png')
+                            img.img-fluid(src='assets/img/before-after/3.png', alt='')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | Before After
                                 .project-name
                                     | Project Name
                     .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/fullsize/2.jpg')
-                            img.img-fluid(src='assets/img/portfolio/thumbnails/2.jpg', alt='')
+                        a.portfolio-box(href='assets/img/before-after/4.png')
+                            img.img-fluid(src='assets/img/before-after/4.png', alt='')
                             .portfolio-box-caption
                                 .project-category.text-white-50
-                                    | Category
+                                    | Before After
                                 .project-name
                                     | Project Name
                     .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/fullsize/3.jpg')
-                            img.img-fluid(src='assets/img/portfolio/thumbnails/3.jpg', alt='')
+                        a.portfolio-box(href='assets/img/before-after/5.png')
+                            img.img-fluid(src='assets/img/before-after/5.png', alt='')
                             .portfolio-box-caption
                                 .project-category.text-white-50
-                                    | Category
+                                    | Before After
                                 .project-name
                                     | Project Name
                     .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/fullsize/4.jpg')
-                            img.img-fluid(src='assets/img/portfolio/thumbnails/4.jpg', alt='')
-                            .portfolio-box-caption
-                                .project-category.text-white-50
-                                    | Category
-                                .project-name
-                                    | Project Name
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/fullsize/5.jpg')
-                            img.img-fluid(src='assets/img/portfolio/thumbnails/5.jpg', alt='')
-                            .portfolio-box-caption
-                                .project-category.text-white-50
-                                    | Category
-                                .project-name
-                                    | Project Name
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/fullsize/6.jpg')
-                            img.img-fluid(src='assets/img/portfolio/thumbnails/6.jpg', alt='')
+                        a.portfolio-box(href='assets/img/before-after/6.png')
+                            img.img-fluid(src='assets/img/before-after/6.png', alt='')
                             .portfolio-box-caption.p-3
                                 .project-category.text-white-50
-                                    | Category
+                                    | Before After
+                                .project-name
+                                    | Project Name
+                    .col-lg-4.col-sm-6
+                        a.portfolio-box(href='assets/img/before-after/7.png')
+                            img.img-fluid(src='assets/img/before-after/7.png', alt='')
+                            .portfolio-box-caption.p-3
+                                .project-category.text-white-50
+                                    | Before After
+                                .project-name
+                                    | Project Name
+                    .col-lg-4.col-sm-6
+                        a.portfolio-box(href='assets/img/before-after/8.png')
+                            img.img-fluid(src='assets/img/before-after/8.png', alt='')
+                            .portfolio-box-caption.p-3
+                                .project-category.text-white-50
+                                    | Before After
+                                .project-name
+                                    | Project Name
+                    .col-lg-4.col-sm-6
+                        a.portfolio-box(href='assets/img/before-after/9.png')
+                            img.img-fluid(src='assets/img/before-after/9.png', alt='')
+                            .portfolio-box-caption.p-3
+                                .project-category.text-white-50
+                                    | Before After
                                 .project-name
                                     | Project Name
 
-        // Call to action
-        section.page-section.bg-dark.text-white
-            .container.text-center
-                h2.mb-4 Free Download at Start Bootstrap!
-                a.btn.btn-light.btn-xl(href='https://startbootstrap.com/theme/creative/') Download Now!
+        //- // Call to action
+        //- section.page-section.bg-dark.text-white
+        //-     .container.text-center
+        //-         h2.mb-4 Free Download at Start Bootstrap!
+        //-         a.btn.btn-light.btn-xl(href='https://startbootstrap.com/theme/creative/') Download Now!
 
         // Contact
         section#contact.page-section
@@ -166,17 +210,17 @@ html(lang='en')
                 .row
                     .col-lg-4.ml-auto.text-center.mb-5.mb-lg-0
                         i.fas.fa-phone.fa-3x.mb-3.text-muted
-                        div +1 (555) 123-4567
+                        div +61 0403 239 506
                     .col-lg-4.mr-auto.text-center
                         i.fas.fa-envelope.fa-3x.mb-3.text-muted
 
                         // Make sure to change the email address in BOTH the anchor text and the link target below!
-                        a.d-block(href='mailto:contact@yourwebsite.com') contact@yourwebsite.com
+                        a.d-block(href='mailto:kiah.bouchet@gmail.com') kiah.bouchet@gmail.com
 
         // Footer
         footer.bg-light.py-5
             .container
-                .small.text-center.text-muted Copyright © 2020 - Start Bootstrap
+                .small.text-center.text-muted Copyright © 2021 - Declutter With Kiah
 
         // Bootstrap core JS
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
