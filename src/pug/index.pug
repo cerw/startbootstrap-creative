@@ -32,6 +32,14 @@ html(lang='en')
         // Font Awesome icons (free version)
         script(src='https://use.fontawesome.com/releases/v5.15.1/js/all.js', crossorigin='anonymous')
 
+        script(src="https://www.googletagmanager.com/gtag/js?id=G-4F6DDPB04G", async)
+        script.
+            window.dataLayer = window.dataLayer || []
+            function gtag(){dataLayer.push(arguments)}
+            gtag('js', new Date())
+            gtag('config', 'G-4F6DDPB04G')
+        
+
         // Google fonts
         link(href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700', rel='stylesheet')
         link(href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic', rel='stylesheet', type='text/css')
@@ -42,12 +50,13 @@ html(lang='en')
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
 
-    body#page-top
+        body#page-top
 
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
             .container
-                img.rounded-circle.p-1(src='assets/img/favicon/favicon.png', alt='Declutter With Kiah',style='height: 40px')
+                a(href='#page-top')
+                    img.rounded-circle.p-1(src='assets/img/favicon/favicon.png', alt='Declutter With Kiah',style='height: 50px')
                 a.navbar-brand.js-scroll-trigger(href='#page-top') Declutter With Kiah
                 button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     span.navbar-toggler-icon
@@ -60,6 +69,8 @@ html(lang='en')
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#before-after') Before & After
                         li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#reviews') Reviews
+                        li.nav-item
                             a.nav-link.js-scroll-trigger(href='#contact') Contact
 
         // Masthead
@@ -71,7 +82,13 @@ html(lang='en')
                         hr.divider.my-4
                     .col-lg-8.align-self-baseline
                         p.text-white-75.font-weight-light.mb-5
-                            | Do you open your cupboards and scream, HELP!! And then quickly close them again? Well, you shouldn't have to, you should open up your pantry or wardrobe and breath out a large sigh of relief because you can finally find everything
+                            | Do you open your cupboards and scream, HELP!! And then quickly close them again? Well, you shouldn't have to, you should open up your pantry or wardrobe and breath out a large sigh of relief because you can finally find everything.
+                            br
+                            br
+                            a(href='https://www.facebook.com/declutterwithKiah', target='_blank')
+                                img.rounded-circle.p-1(src='assets/img/fb.jpeg', alt='Facebook Page - Declutter With Kiah',style='height: 40px')
+                            a(href='https://www.instagram.com/declutterwithkiah', target='_blank')
+                                img.rounded-circle.p-1(src='assets/img/insta.png', alt='Instagram - Declutter With Kiah',style='height: 40px')
                         a.btn.btn-primary.btn-xl.js-scroll-trigger(href='#about') Find Out More
 
         // About
@@ -79,7 +96,7 @@ html(lang='en')
             .container
                 .row.justify-content-center
                     .col-lg-8.text-center
-                        h2.text-white.mt-0 A clean house makes for a clean mind
+                        h2.text-white.mt-0 "A clean house makes for a clean mind"
                         hr.divider.light.my-4
                         p.text-white-50.mb-4
                             | This is a job for a perfectionist, one would even call these people OCD! And that is me...im here to help re organise, stylize whatever it may be that you need help with. Office work, that's lying around, clothes that need sorting, labeling food containers so you don't keep buying another bottle of you know what?!
@@ -117,82 +134,89 @@ html(lang='en')
                             h3.h4.mb-2 Finding love again aka unpacking your boxes
                             p.text-muted.mb-0 This package includes how ever long it takes to unpack and properly store away all your items into a well organised and  designed home again. This package is at a rate of $35p/hr. This package does require the owner of the items to be present to then best un pack your new home.
 
-        // before-after
-        div#before-after
+        // Portfolio
+        section#before-after
+        div#portfolio
             .container-fluid.p-0
+                h2.text-center.mt-0 Before & After
+                hr.divider.my-4
                 .row.no-gutters
                     .col-lg-4.col-sm-6
                         a.portfolio-box(href='assets/img/before-after/1.png')
-                            img.img-fluid(src='assets/img/before-after/1.png', alt='')
-                            //- .portfolio-box-caption
-                            //-     .project-category.text-white-50
-                            //-         | Before After
-                            //-     .project-name
-                            //-         | Storage
+                            img.img-fluid(src='assets/img/before-after/1.png', alt='...')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | Category
+                                .project-name
+                                    | Project Name
                     .col-lg-4.col-sm-6
                         a.portfolio-box(href='assets/img/before-after/2.png')
-                            img.img-fluid(src='assets/img/before-after/2.png', alt='')
-                            //- .portfolio-box-caption
-                            //-     .project-category.text-white-50
-                            //-         | Before After
-                            //-     .project-name
-                            //-         | Kids Storage
+                            img.img-fluid(src='assets/img/before-after/2.png', alt='...')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | Category
+                                .project-name
+                                    | Project Name
                     .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/before-after/3.png')
-                            img.img-fluid(src='assets/img/before-after/3.png', alt='')
-                            //- .portfolio-box-caption
-                            //-     .project-category.text-white-50
-                            //-         | Before After
-                            //-     .project-name
-                            //-         | Project Name
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/3.jpg')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/3.jpg', alt='...')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | Category
+                                .project-name
+                                    | Project Name
                     .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/before-after/4.png')
-                            img.img-fluid(src='assets/img/before-after/4.png', alt='')
-                            //- .portfolio-box-caption
-                            //-     .project-category.text-white-50
-                            //-         | Before After
-                            //-     .project-name
-                            //-         | Project Name
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/4.jpg')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/4.jpg', alt='...')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | Category
+                                .project-name
+                                    | Project Name
                     .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/before-after/5.png')
-                            img.img-fluid(src='assets/img/before-after/5.png', alt='')
-                            //- .portfolio-box-caption
-                            //-     .project-category.text-white-50
-                            //-         | Before After
-                            //-     .project-name
-                            //-         | Project Name
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/5.jpg')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/5.jpg', alt='...')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | Category
+                                .project-name
+                                    | Project Name
                     .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/before-after/6.png')
-                            img.img-fluid(src='assets/img/before-after/6.png', alt='')
-                            //- .portfolio-box-caption.p-3
-                            //-     .project-category.text-white-50
-                            //-         | Before After
-                            //-     .project-name
-                            //-         | Project Name
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/before-after/7.png')
-                            img.img-fluid(src='assets/img/before-after/7.png', alt='')
-                            //- .portfolio-box-caption.p-3
-                            //-     .project-category.text-white-50
-                            //-         | Before After
-                            //-     .project-name
-                            //-         | Project Name
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/before-after/8.png')
-                            img.img-fluid(src='assets/img/before-after/8.png', alt='')
-                            //- .portfolio-box-caption.p-3
-                            //-     .project-category.text-white-50
-                            //-         | Before After
-                            //-     .project-name
-                            //-         | Project Name
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/before-after/9.png')
-                            img.img-fluid(src='assets/img/before-after/9.png', alt='')
-                            //- .portfolio-box-caption.p-3
-                            //-     .project-category.text-white-50
-                            //-         | Before After
-                            //-     .project-name
-                            //-         | Project Name
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/6.jpg')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/6.jpg', alt='...')
+                            .portfolio-box-caption.p-3
+                                .project-category.text-white-50
+                                    | Category
+                                .project-name
+                                    | Project Name
+
+       
+
+        
+
+            // Services
+        section#services.page-section
+            .container
+                h2.text-center.mt-0 Reviews
+                hr.divider.my-4
+                .row
+                    .col-lg-3.col-md-6.text-center
+                        .mt-5
+                            h3.h4.mb-2 John B
+                            q.text-muted.mb-0.Here is y review 
+                    .col-lg-3.col-md-6.text-center
+                        .mt-5
+                            h3.h4.mb-2 John B
+                            q.text-muted.mb-0 Here is y review 
+                    .col-lg-3.col-md-6.text-center
+                        .mt-5
+                           h3.h4.mb-2 John B
+                           q.text-muted.mb-0 Here is y review 
+                    .col-lg-3.col-md-6.text-center
+                        .mt-5
+                           h3.h4.mb-2 John B
+                            q.text-muted.mb-0 Here is y review 
+
 
         //- // Call to action
         //- section.page-section.bg-dark.text-white
@@ -208,7 +232,7 @@ html(lang='en')
                         h2.mt-0 Let's Get In Touch!
                         hr.divider.my-4
                         p.text-muted.mb-5
-                            | Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!
+                            | Ready to start your next project with me? Give me a call or send me an email and I will get back to you as soon as possible!
                 .row
                     .col-lg-4.ml-auto.text-center.mb-5.mb-lg-0
                         i.fas.fa-phone.fa-3x.mb-3.text-muted
